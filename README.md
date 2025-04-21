@@ -55,3 +55,6 @@ WebLLM compiles LLM models into WASM + WebGPU binaries using TVM and runs them d
 ```bash
 git clone https://github.com/mlc-ai/web-llm.git
 cd web-llm
+
+✨ License
+This project is licensed under the Apache 2.0 License.
