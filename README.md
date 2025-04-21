@@ -1,12 +1,57 @@
-# React + Vite
+# 🧠 Run ChatGPT Locally using WebLLM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WebLLM allows you to run large language models (LLMs) directly in your browser — **without using any cloud servers**! This project guides you through setting up WebLLM to run ChatGPT-like conversations locally on your machine.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 What is WebLLM?
 
-## Expanding the ESLint configuration
+**WebLLM** is an open-source project developed by [MLC AI](https://mlc.ai/web-llm/) that brings transformer-based large language models to web browsers using WebGPU, enabling **offline**, **private**, and **serverless** LLM inference.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ Key Features
+- No internet/cloud API required
+- Fully runs in your local browser
+- Powered by WebGPU (hardware-accelerated)
+- Open-source and privacy-respecting
+- Lightweight and easy to set up
+
+---
+
+## 📦 Prerequisites
+
+Before running WebLLM, ensure you have the following:
+
+- ✅ A **modern browser** that supports WebGPU:
+  - Chrome Canary with WebGPU enabled
+  - Edge or Safari Technology Preview (experimental)
+- ✅ Your **GPU drivers** are up to date
+- ✅ Git and Python (if building locally)
+
+---
+
+## 🔧 How It Works
+
+WebLLM compiles LLM models into WASM + WebGPU binaries using TVM and runs them directly in your browser. It utilizes the **LLM Web Runtime** (LWR) to infer responses in real-time using your local hardware (GPU).
+
+---
+
+## 🛠️ Setup Instructions
+
+### Option 1: Use WebLLM in Your Browser (Quick Start)
+
+1. Open your browser (Chrome Canary recommended)
+2. Navigate to the official WebLLM demo:  
+   👉 [https://mlc.ai/web-llm](https://mlc.ai/web-llm)
+3. Choose a model (e.g., `RedPajama-3B`, `LLaMA2`, or `Mistral`)
+4. Wait for model to load (~few seconds to minutes)
+5. Start chatting locally — no cloud API involved!
+
+---
+
+### Option 2: Run WebLLM Locally via GitHub
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/mlc-ai/web-llm.git
+cd web-llm
